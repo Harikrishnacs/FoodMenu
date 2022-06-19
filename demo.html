@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="./style.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body id="dis">
+    <header class="foodmenu">
+        <h1>Food Menu</h1>
+    </header>
+    <main>
+        <div class="container" id="container">
+            <!-- <div class="alret">
+                <strong>Successfully updated</strong>
+            </div> -->
+            <div class="input_content">
+                <input class="input_items" id="input_item" type="text">
+                <button onclick="foodadd('New FoodItem Updated')" id="save_item">save</button>
+            </div>
+            <ul class="allFood" id="allFood">
+
+                <li class="foodItem">
+                    <div class="foodName">Idly</div>
+                    <div onclick="removeItem(event,'Successfully Deleted FoodItem')">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </li>
+                <li class="foodItem">
+                    <div class="foodName">Poori</div>
+                    <div onclick="removeItem(event,'Successfully Deleted FoodItem')">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </li>
+                <li class="foodItem">
+                    <div class="foodName">Dosa</div>
+                    <div onclick="removeItem(event,'Successfully Deleted FoodItem')">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

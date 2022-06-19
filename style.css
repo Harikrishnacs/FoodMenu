@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    background-color: #001F54;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+
+}
+
+.foodmenu {
+    background: #3772ff8f;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.alretgreen {
+    text-align: center;
+    background: #99cc33;
+    padding: 8px;
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.alretred {
+    text-align: center;
+    background: #cc3300;
+    padding: 8px;
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.alretEmpty{
+    text-align: center;
+    background: #ffcc00;
+    padding: 8px;
+    margin: 10px;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+}
+.input_content {
+    background: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.input_content input {
+    width: 80%;
+    padding: 8px;
+    outline: none;
+}
+
+.input_content button {
+    background: blue;
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+.input_content button:hover {
+   color:  blue;
+    background: #fff;
+    padding: 8px;
+    border: blue 1px solid;
+    font-weight: bold;
+}
+
+.allFood {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+}
+
+.allFood li {
+    list-style: none;
+    border: 1px solid gray;
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+    
+    
+}
+
+.allFood i {
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.allFood li:hover {
+    background: blue;
+    color: #fff;
+    border: none;
+    border: #fff 1px solid;
+}
+
+.allFood li:hover i {
+    display: block;
+}
