@@ -1,20 +1,16 @@
-
 let input_food = document.getElementById("input_item");
-
-
 let alretdiv = document.createElement("div");
 let alretstrong = document.createElement("strong");
 alretdiv.appendChild(alretstrong);
 //event Handler
 function foodadd(message) {
-
     if (input_food.value.trim() == "") {
+        //alret empty set
         alretdiv.className = "alretEmpty"
         alretstrong.innerHTML = "";
         let textstrong = document.createTextNode("Enter The Items:");
         alretstrong.appendChild(textstrong);
         console.log(document.getElementById("container").prepend(alretdiv))
-
     }
     else {
         //food list add
@@ -38,7 +34,7 @@ function foodadd(message) {
         //onclick attributes
         foodIconbtn.parentElement.setAttribute("onclick", "removeItem(event,'Successfully Deleted item')")
         document.getElementById("allFood").append(foodItemli);
-        //alret
+        //alret add FoodItem
         alretdiv.className = "alretgreen"
         alretstrong.innerHTML = "";
         let textstrong = document.createTextNode(message + " " + input_food.value);
@@ -50,26 +46,12 @@ function foodadd(message) {
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function removeItem(event, message) {
+    //Remove the Food items
     let foodName = document.querySelector(".foodName").textContent;
     let removeBtn = event.target.parentNode.parentNode;
     removeBtn.remove();
+    //alret delete FoodItems
     alretdiv.className = "alretred"
     alretstrong.innerHTML = "";
     let textstrong = document.createTextNode(`${message} ${foodName}`);
